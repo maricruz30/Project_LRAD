@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps ="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Project_LRAD.Views.PageVerMapa">
+    <ContentPage.Content>
+        <StackLayout>
+            <maps:Map HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand"
+              x:Name="mapa"
+              IsShowingUser="True" />
+
+            <Label x:Name="ubication"/>
+
+            <Button x:Name="btnCambiarU" Clicked="btnCambiarU_Clicked"
+                    Text="Cambiar Ubicación"
+                    Margin="10,10,10,10"
+                    HeightRequest="45"
+                    WidthRequest="30"
+                    BackgroundColor="DarkOrange"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

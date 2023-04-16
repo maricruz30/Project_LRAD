@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_LRAD.Views.PageAddSitios">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Gainsboro">
+
+                <Entry x:Name="txtIdSitio"
+                       IsVisible="false"
+                 />
+
+                <Image x:Name="log_ucenm" Source="ucenm.png"
+                   WidthRequest="200" HeightRequest="200" 
+                       
+                   BackgroundColor="White"/>
+
+
+                <Image x:Name="foto" WidthRequest="200" HeightRequest="200" BackgroundColor="White"/>
+
+                <Button x:Name="btnFoto" Text="Tomar" Clicked="btnFoto_Clicked"
+                    Margin="30,30,30,10"
+                    BackgroundColor="DarkOrange"/>
+
+                <Label Text="SITIO VISITADO"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtSitio"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Text"
+                   TextColor="Black"
+                   Margin="10,10,10,0" />
+
+                <Label Text="LATITUD"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtLatitud"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   Margin="10,10,10,0"
+                       />
+
+                <Label Text="LONGITUD"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtLongitud"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   Margin="10,10,10,0" 
+                   />
+
+                <Button x:Name="btnMapa" Text="MAPA" Clicked="btnMapa_Clicked"
+                    Margin="30,30,30,10"
+                    BackgroundColor="DarkOrange"/>
+
+                <Picker  x:Name="cmbPais"  
+                         Title="PAIS" 
+                         Margin="10,10,10,0" 
+                         BackgroundColor="AliceBlue">
+
+                    <Picker.Items>
+                        <x:String>HONDURAS (504)</x:String>
+                        <x:String>EL SALVADOR (503)</x:String>
+                        <x:String>GUATEMALA (502)</x:String>
+                        <x:String>NICARAGUA (505)</x:String>
+                        <x:String>COSTA RICA (506)</x:String>
+                        <x:String>PANAMÁ (507)</x:String>
+                        <x:String>BELICE (501)</x:String>
+                        <x:String>MÉXICO(52)</x:String>
+                        <x:String>CANADÁ (1)</x:String>
+                        <x:String>ESTADOS UNIDOS (1)</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="NOTA"
+                   Margin="10,10,10,-5"
+                   />
+                
+                <Frame CornerRadius="10"  Margin="10,10,10,0" Padding="-2">
+                    <StackLayout>
+                        <Editor x:Name="txtNota"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Text"
+                   TextColor="Black"
+                    
+                   AutoSize="TextChanges"
+                   HeightRequest="100"/>
+                    </StackLayout>
+
+
+                </Frame>
+
+                <Button x:Name="btnSalvar" Clicked="btnSalvar_Clicked"
+                    Text="SALVAR SITIO"
+                    Margin="10,10,10,10"
+                    BackgroundColor="CornflowerBlue"
+                    />
+
+                <!--
+                
+                <ImageButton Source="ucenm.png" HeightRequest="45"
+                    WidthRequest="10">
+                 
+               
+                </ImageButton>
+                
+                -->
+                
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

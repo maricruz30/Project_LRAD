@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_LRAD.Views.PageVerImagen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SITIO VISITADO" x:Name="nombre"
+                   Margin="10,10,10,15"
+                   />
+
+            <Image x:Name="v_image" Source=""
+ 
+                   BackgroundColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_LRAD.Views.PageMostrarSitio">
+    <ContentPage.Content>
+
+        <StackLayout >
+
+            <StackLayout  BackgroundColor="AntiqueWhite">
+                <ListView x:Name="listSities" ItemSelected="listSities_ItemSelected">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <!-- 
+                                     <Label Text="{Binding id}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                                    -->
+
+                                    <Label Text="{Binding id}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                                    <Label Text="{Binding  Nomsitio}" Grid.Row="0" Grid.Column="1" TextColor="Gray"/>
+                                    <Label Text="{Binding pais}" Grid.Row="0" Grid.Column="2" TextColor="Gray"/>
+                                  
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </StackLayout>
+
+            <Button x:Name="btnVerIMG"
+                    Text="VER IMAGEN"
+                    Margin="10,10,10,10"
+                    BackgroundColor="CornflowerBlue"
+                    Clicked="btnVerIMG_Clicked"
+                    />
+
+            <Button x:Name="btnActualizarS"
+                    Text="ACTUALIZAR"
+                    Margin="10,10,10,10"
+                    BackgroundColor="CornflowerBlue"
+                    Clicked="btnActualizarS_Clicked"
+                    />
+
+            <Button x:Name="btnCompartirS"
+                    Text="COMPARTIR"
+                    Margin="10,10,10,10"
+                    BackgroundColor="CornflowerBlue"
+                    Clicked="btnCompartirS_Clicked"
+                    />
+
+            <Button x:Name="btnEliminarSitio"
+                    Text="ELIMINAR"
+                    Margin="10,10,10,10"
+                    BackgroundColor="Orange"
+                    Clicked="btnEliminarSitio_Clicked"
+                    />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

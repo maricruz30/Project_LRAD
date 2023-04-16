@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_LRAD.Views.PageAddContact">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Gainsboro">
+
+                <Entry x:Name="txtIdContact"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Text"
+                   TextColor="Black"
+                   Margin="10,10,10,0" 
+                       IsVisible="false"/>
+                
+                
+                <Image x:Name="log_ucenm" Source="ucenm.png"
+                   WidthRequest="200" HeightRequest="200" 
+                       
+                   BackgroundColor="White"/>
+
+
+                <Image x:Name="foto" WidthRequest="200" HeightRequest="200" BackgroundColor="White"/>
+
+                <Button x:Name="btnFoto" Text="Tomar" Clicked="btnFoto_Clicked" 
+                    Margin="30,30,30,10"
+                    BackgroundColor="Orange"/>
+
+                <Button x:Name="btnAgregarF" Text="agregarF" Clicked="btnAgregarF_Clicked"
+                    Margin="30,30,30,10"
+                    BackgroundColor="Orange"
+                        IsVisible="FALSE"/>
+
+                <Label x:Name="info" Text="" FontSize="Large"
+                   Margin="10,10,10,-5"
+                   />
+
+                <Label Text="NOMBRE"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtNombre"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Text"
+                   TextColor="Black"
+                   Margin="10,10,10,0" />
+
+                <Label Text="TELEFONO"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtTelefono"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Telephone"
+                   TextColor="Black"
+                   Margin="10,10,10,0"/>
+
+                <Label Text="EDAD"
+                   Margin="10,10,10,-5"
+                   />
+                <Entry x:Name="txtEdad"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Numeric"
+                   TextColor="Black"
+                   Margin="10,10,10,0" />
+
+                <Picker  x:Name="cmbPais"  
+                         Title="PAIS" 
+                         Margin="10,10,10,0" 
+                         BackgroundColor="AliceBlue">
+
+                    <Picker.Items>
+                        <x:String>HONDURAS (504)</x:String>
+                        <x:String>EL SALVADOR (503)</x:String>
+                        <x:String>GUATEMALA (502)</x:String>
+                        <x:String>NICARAGUA (505)</x:String>
+                        <x:String>COSTA RICA (506)</x:String>
+                        <x:String>PANAMÁ (507)</x:String>
+                        <x:String>BELICE (501)</x:String>
+                        <x:String>MÉXICO(52)</x:String>
+                        <x:String>CANADÁ (1)</x:String>
+                        <x:String>ESTADOS UNIDOS (1)</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="NOTA"
+                   Margin="10,10,10,-5"
+                   />
+
+
+                <Frame CornerRadius="10"  Margin="10,10,10,0" Padding="-2">
+                    <StackLayout>
+                        <Editor x:Name="txtNota"
+                   BackgroundColor="AliceBlue"
+                   Keyboard="Text"
+                   TextColor="Black"
+                    
+                   AutoSize="TextChanges"
+                   HeightRequest="100"/>
+                    </StackLayout>
+                    
+
+                </Frame>
+
+                <Button x:Name="btnSalvar" Clicked="btnSalvar_Clicked"
+                    Text="SALVAR CONTACTO"
+                    Margin="10,10,10,10"
+                    BackgroundColor="CornflowerBlue"
+                    />
+                
+                <!--
+                
+                   <ListView x:Name="listContact">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding id}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                                    <Label Text="{Binding nombre}" Grid.Row="0" Grid.Column="1" TextColor="Gray"/>
+                                    <Label Text="{Binding telefono}" Grid.Row="0" Grid.Column="2" TextColor="Gray"/>
+                                    <Label Text="{Binding edad}" Grid.Row="0" Grid.Column="3" TextColor="Gray"/>
+                                    <Label Text="{Binding pais}" Grid.Row="0" Grid.Column="4" TextColor="Gray"/>
+
+                <Label Text="{Binding nota}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" TextColor="Green"/>
+                </Grid>
+                </ViewCell>
+                </DataTemplate>
+                </ListView.ItemTemplate>
+
+                </ListView>
+
+                -->
+
+             
+
+            </StackLayout>
+            
+            
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

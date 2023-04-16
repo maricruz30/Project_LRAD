@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project_LRAD.Views.PageInitial">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="toa" Source=""
+                    WidthRequest="200" HeightRequest="200" 
+                   BackgroundColor="White" IsVisible="false"/>
+
+            <Image x:Name="log_ucenm" Source="ucenm.png"
+                   WidthRequest="200" HeightRequest="200" 
+                   BackgroundColor="White"/>
+            
+            <Button x:Name="btnAgenda" Text="Agenda" Clicked="btnAgenda_Clicked"
+                    Margin="10,30,10,10"
+                    BackgroundColor="DarkOrange"/>
+            <Button x:Name="btnSitios" Text="Sitios" Clicked="btnSitios_Clicked"
+                    Margin="10,30,10,10"
+                    BackgroundColor="DarkOrange"/>
+            <Button x:Name="btnSalvarContactos" Text="Salvar Contacto" Clicked="btnSalvarContactos_Clicked" 
+                    Margin="10,30,10,10"
+                    BackgroundColor="CornflowerBlue"/>
+            <Button x:Name="btnSalvarSitios" Text="Salvar Sitio" Clicked="btnSalvarSitios_Clicked"
+                    Margin="10,30,10,10"
+                    BackgroundColor="CornflowerBlue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
